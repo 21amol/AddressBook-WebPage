@@ -19,5 +19,5 @@ const ziperror = document.querySelector('.zip-error');
 zip.addEventListener('input',function(){
     let Pattern = RegExp('^[1-9][0-9]{5}$');
     if(Pattern.test(zip.value)) ziperror.textContent = '';
-    else phoneerror.textContent = 'Invalid Zip Code';
+    else ziperror.textContent = 'Invalid Zip Code';
 });
